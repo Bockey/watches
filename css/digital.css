@@ -1,0 +1,285 @@
+@font-face {
+  font-family: digital;
+  src: url(/fonts/digital-7.mono.ttf);
+}
+* {
+  margin: 0;
+}
+body {
+  color: white;
+  font-size: 12px;
+  font-family: "Rajdhani";
+}
+.digital {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 100px 10px;
+}
+.casio {
+  position: relative;
+  background: linear-gradient(to left, black, rgb(34, 29, 29));
+  width: 400px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px dotted rgb(143, 138, 138);
+  border-bottom: 1px dotted rgb(143, 138, 138);
+}
+.upperBodyBorder div {
+  width: 0;
+  height: 0;
+  border-bottom: 770px solid rgb(34, 29, 29);
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  transform: translateY(-87%);
+}
+.lowerBodyBorder div {
+  width: 0;
+  height: 0;
+  border-top: 770px solid rgb(34, 29, 29);
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+}
+.upperBodyBorder,
+.lowerBodyBorder {
+  height: 100px;
+  overflow: hidden;
+}
+.blueBorder {
+  width: 370px;
+  height: 300px;
+  border: 5px solid blue;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whiteBorder {
+  width: 350px;
+  height: 280px;
+  border: 2px solid white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: 2px;
+  border-bottom: 4px solid blue;
+  font-family: "Rajdhani";
+  font-size: 30px;
+}
+.f91 {
+  font-size: 19px;
+  font-family: sans-serif;
+}
+.ac {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.italic {
+  font-style: italic;
+}
+.options1,
+.options2 {
+  width: 88%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  font-family: "Rajdhani";
+}
+.redTriangleLeft {
+  border-right: 12px solid red;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  width: 0;
+  height: 0;
+  margin-right: 3px;
+}
+.redTriangleRight {
+  border-left: 12px solid red;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+}
+section {
+  display: flex;
+  align-items: center;
+}
+.gold {
+  color: gold;
+}
+.screenWhiteBorder {
+  width: 85%;
+  height: 135px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.screen {
+  width: 93%;
+  height: 115px;
+  border-radius: 15px;
+  border: 2px solid rgb(35, 49, 26);
+  background: rgb(153, 160, 145);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+h2 {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottomSection1 {
+  border-top: 4px solid blue;
+  padding: 3px 20px 0 25px;
+}
+.bottomSection2 {
+  border-top: 4px solid blue;
+  padding: 3px 25px 0 20px;
+}
+.bottomSection3 {
+  border: 4px solid blue;
+  padding: 1px 25px 1px 25px;
+  border-radius: 7px 7px 15px 15px;
+  margin-bottom: 6px;
+  color: red;
+  font-style: italic;
+  font-family: "Arial Narrow Bold", sans-serif;
+  font-size: 21px;
+}
+
+/*date and time on screen*/
+
+.dayAndDate {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgb(16, 37, 19);
+  font-size: 24px;
+  font-family: "digital"; /*1001fonts.com free for personal use*/
+  font-weight: bold;
+}
+.day,
+.date {
+  margin-right: 40px;
+}
+.time {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgb(16, 37, 19);
+  font-size: 75px;
+  font-family: "digital";
+  font-weight: bold;
+}
+.seconds {
+  font-size: 55px;
+  align-self: flex-end;
+  margin: 0 15px 5px 5px;
+}
+
+/*buttons*/
+
+.light {
+  width: 20px;
+  height: 60px;
+  background: rgb(34, 29, 29);
+  position: absolute;
+  left: -20px;
+  top: 40px;
+  z-index: -1;
+  border-radius: 10px 0 0 10px;
+}
+.mode {
+  width: 20px;
+  height: 60px;
+  background: rgb(34, 29, 29);
+  position: absolute;
+  left: -20px;
+  top: 250px;
+  z-index: -1;
+  border-radius: 10px 0 0 10px;
+}
+.chronograph {
+  width: 20px;
+  height: 60px;
+  background: rgb(34, 29, 29);
+  position: absolute;
+  left: 400px;
+  top: 40px;
+  z-index: -1;
+  border-radius: 0 10px 10px 0;
+}
+.alarm {
+  width: 20px;
+  height: 60px;
+  background: rgb(34, 29, 29);
+  position: absolute;
+  left: 400px;
+  top: 250px;
+  z-index: -1;
+  border-radius: 0 10px 10px 0;
+}
+
+/*watch bands*/
+.watchBandUp {
+  height: 200px;
+  width: 345px;
+  border-bottom: 1px dotted rgb(143, 138, 138);
+  background-color: rgb(34, 29, 29);
+  border-radius: 0 0 3px 3px;
+}
+.watchBandDown {
+  height: 200px;
+  width: 345px;
+  border-top: 1px dotted rgb(143, 138, 138);
+  background-color: rgb(34, 29, 29);
+  border-radius: 3px 3px 0 0;
+}
+
+/*press light button and turn on*/
+
+.pressLight {
+  position: absolute;
+  color: #fff;
+  left: -140;
+  top: 48px;
+  font-size: 20px;
+  background: rgb(3, 116, 18);
+  padding: 10px;
+  border-radius: 10px;
+  transition-property: padding;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  box-shadow: 5px 4px 5px rgb(16, 37, 19);
+}
+.pressLight:hover {
+  padding: 13px;
+}
+.hold {
+  position: absolute;
+  color: rgb(34, 29, 29);
+  left: -140;
+  top: 108px;
+  font-size: 20px;
+  padding-left: 18px;
+  color: red;
+  display: none;
+}
