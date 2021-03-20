@@ -20,12 +20,14 @@ turnOn.addEventListener("mouseup", function () {
 function myFunction(mediaQ) {
   if (mediaQ.matches) {
     // If media query matches
-    turnOn.addEventListener("touchstart", function () {
+    turnOn.addEventListener("touchstart", function (event) {
+      event.preventDefault();
       screen.style.backgroundColor = "rgb(3, 116, 18)";
       lightSwitch.style.left = "-4";
       hold.style.display = "block";
     });
-    turnOn.addEventListener("touchend", function () {
+    turnOn.addEventListener("touchend", function (event) {
+      event.preventDefault();
       screen.style.backgroundColor = "rgb(153, 160, 145)";
       lightSwitch.style.left = "-15";
       hold.style.display = "none";
