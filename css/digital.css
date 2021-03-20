@@ -9,6 +9,12 @@ body {
   color: white;
   font-size: 12px;
   font-family: "Rajdhani";
+  background: linear-gradient(
+    to right,
+    rgb(53, 22, 0),
+    rgb(153, 120, 24),
+    rgb(188, 209, 0)
+  );
 }
 .digital {
   display: flex;
@@ -280,6 +286,153 @@ h2 {
   top: 108px;
   font-size: 20px;
   padding-left: 18px;
-  color: red;
+  color: #000;
   display: none;
+}
+
+@media (max-width: 675px) {
+  body {
+    background: rgb(167, 150, 0);
+  }
+  .digital {
+    margin: 10px 0px;
+  }
+  .casio {
+    width: 300px;
+    height: 262.5px;
+  }
+  .upperBodyBorder div {
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    transform: translateY(-90%);
+  }
+  .lowerBodyBorder div {
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+  }
+  .upperBodyBorder,
+  .lowerBodyBorder {
+    height: 75px;
+  }
+  .blueBorder {
+    width: 277.5px;
+    height: 225px;
+  }
+  .whiteBorder {
+    width: 262.5px;
+    height: 210px;
+  }
+  h1 {
+    border-bottom: 2.4px solid blue;
+    font-size: 22.5px;
+  }
+  .f91 {
+    font-size: 14px;
+  }
+  .ac {
+    font-size: 10px;
+  }
+  .options1,
+  .options2 {
+    margin: 4px;
+  }
+  .redTriangleLeft {
+    border-right: 9px solid red;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+  }
+  .redTriangleRight {
+    border-left: 9px solid red;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+  }
+  .screenWhiteBorder {
+    height: 101px;
+  }
+  .screen {
+    height: 86px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  .bottomSection1 {
+    border-top: 3px solid blue;
+    padding: 0px 15px 0 18px;
+  }
+  .bottomSection2 {
+    border-top: 3px solid blue;
+    padding: 0px 18px 0 15px;
+  }
+  .bottomSection3 {
+    border: 3px solid blue;
+    padding: 0px 18px 0px 18px;
+    font-size: 15.5px;
+  }
+
+  /*date and time on screen*/
+
+  .dayAndDate {
+    font-size: 18px;
+  }
+  .day,
+  .date {
+    margin-right: 30px;
+  }
+  .time {
+    font-size: 56px;
+  }
+  .seconds {
+    font-size: 41px;
+    margin: 0 11px 4px 4px;
+  }
+
+  /*buttons*/
+
+  .light {
+    width: 15px;
+    height: 45px;
+    left: -15px;
+    top: 30px;
+  }
+  .mode {
+    width: 15px;
+    height: 45px;
+    left: -15px;
+    top: 187px;
+  }
+  .chronograph {
+    width: 15px;
+    height: 45px;
+    left: 300px;
+    top: 30px;
+  }
+  .alarm {
+    width: 15px;
+    height: 45px;
+    left: 300px;
+    top: 187px;
+  }
+
+  /*watch bands*/
+  .watchBandUp {
+    height: 150px;
+    width: 268px;
+  }
+  .watchBandDown {
+    height: 150px;
+    width: 268px;
+  }
+
+  /*press light button and turn on*/
+
+  .pressLight {
+    left: 110;
+    top: -158px;
+    box-shadow: rgb(0, 0, 0) 3px 3px 10px;
+  }
+  .hold {
+    left: -140;
+    top: 91px;
+    color: red;
+  }
 }
