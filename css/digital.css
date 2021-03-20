@@ -2,6 +2,10 @@
   font-family: digital;
   src: url(/fonts/digital-7.mono.ttf);
 }
+@font-face {
+  font-family: sfDigital;
+  src: url(/fonts/SFDigitalReadout-Medium.ttf);
+}
 * {
   margin: 0;
 }
@@ -377,9 +381,11 @@ h2 {
   .day,
   .date {
     margin-right: 30px;
+    font-family: sfDigital;
   }
   .time {
     font-size: 56px;
+    font-family: sfDigital;
   }
   .seconds {
     font-size: 41px;
