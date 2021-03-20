@@ -431,8 +431,8 @@ h2 {
     box-shadow: rgb(0, 0, 0) 3px 3px 10px;
   }
   .hold {
-    left: -140;
-    top: 91px;
+    left: 110;
+    top: -101px;
     color: red;
   }
 }
