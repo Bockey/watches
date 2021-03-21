@@ -5,8 +5,10 @@ const dateContainer = document.querySelector(".date");
 const dayContainer = document.querySelector(".day");
 
 const time = new Date();
+console.log(time);
 let day = time.getDay();
 let date = time.getUTCDate();
+console.log(day);
 
 let hours = time.getHours();
 let minutes = time.getMinutes();
@@ -60,7 +62,7 @@ function moveTime() {
   if (day === 6) {
     dayContainer.textContent = "SA";
   }
-  if (day === 7) {
+  if (day === 0) {
     dayContainer.textContent = "SU";
   }
 }
