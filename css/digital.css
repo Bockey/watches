@@ -1,10 +1,10 @@
 @font-face {
-  font-family: digital;
-  src: url(/fonts/digital-7.mono.ttf);
-}
-@font-face {
   font-family: sfDigital;
   src: url(/fonts/SFDigitalReadout-Medium.ttf);
+}
+@font-face {
+  font-family: digital;
+  src: url(/fonts/digital-7.ttf);
 }
 * {
   margin: 0;
@@ -433,12 +433,12 @@ h2 {
 
   .pressLight {
     left: 110;
-    top: -158px;
+    top: 358px;
     box-shadow: rgb(0, 0, 0) 3px 3px 10px;
   }
   .hold {
     left: 110;
-    top: -101px;
+    top: 381px;
     color: red;
   }
 }
