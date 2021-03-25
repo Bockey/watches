@@ -335,3 +335,37 @@
   padding: 0px 3px;
   position: absolute;
 }
+.dateRolex {
+  font-size: 25px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+/*move buttons*/
+
+.moveBtn {
+  cursor: pointer;
+  padding: 20px;
+  font-size: 25px;
+  font-family: sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  border: none;
+  border-radius: 20px;
+  transition: transform 0.4s ease-in-out;
+}
+.goToDigital {
+  background: linear-gradient(rgb(173, 117, 7), gold);
+  box-shadow: 3px 3px 10px rgb(173, 115, 7);
+}
+.goToAnalog {
+  background: black;
+  color: gold;
+  box-shadow: 3px 3px 10px black;
+}
+.moveBtn:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+}

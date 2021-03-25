@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/digital.css">
     <link rel="stylesheet" href="css/analog.css">
+    <link rel="stylesheet" href="css/display.css">
 </head>
 <body>
+    
     <div class="grid">
+        <div class="siteName">Time Is</div>
         <div class="analog">
+            <button class="goToDigital moveBtn">See digital watch</button>
             <div class="rolex">
                 <div class="lugUp"><div class="leftCutLugUp"><div class="rightCutLugUp"></div></div></div>
                 <div class="lugDown"><div class="leftCutLugDown"></div><div class="rightCutLugDown"></div></div>
@@ -49,7 +53,7 @@
             </div>
         </div>
         <div class="digital">
-           
+            <button class="goToAnalog moveBtn">See analog watch</button>
             <div class="watchBandUp"></div>
             <div class="upperBodyBorder"><div></div></div>
             <div class="casio">
@@ -78,8 +82,10 @@
             <div class="watchBandDown"></div>
         </div>
     </div>
+    <footer>Made by &copyBockey</footer>
     <script src="js/digital.js"></script>
     <script src="js/light.js"></script>
     <script src="js/analog.js"></script>
+    <script src="js/changepage.js"></script>
 </body>
 </html>

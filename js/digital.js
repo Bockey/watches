@@ -7,7 +7,7 @@ const dayContainer = document.querySelector(".day");
 const time = new Date();
 console.log(time);
 let day = time.getDay();
-let date = time.getUTCDate();
+let date = time.getDate();
 console.log(day);
 
 let hours = time.getHours();

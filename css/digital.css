@@ -15,19 +15,20 @@ body {
   font-family: "Rajdhani";
   background: linear-gradient(
     to right,
-    rgb(53, 22, 0),
-    rgb(153, 120, 24),
-    rgb(188, 209, 0)
+    rgb(173, 115, 7) 60%,
+    gold,
+    rgb(173, 115, 7)
   );
 }
 
 .digital {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 .casio {
   position: relative;
@@ -198,6 +199,7 @@ h2 {
   font-size: 75px;
   font-family: sfDigital;
   font-weight: bold;
+  margin-bottom: -10px;
 }
 .seconds {
   font-size: 55px;
@@ -279,9 +281,10 @@ h2 {
   transition-duration: 0.5s;
   cursor: pointer;
   box-shadow: 5px 4px 5px rgb(16, 37, 19);
+  transition: transform 0.4s ease-in-out;
 }
 .pressLight:hover {
-  padding: 13px;
+  transform: scaleX(1.1) scaleY(1.1);
 }
 .hold {
   position: absolute;
@@ -295,9 +298,6 @@ h2 {
 }
 
 @media (max-width: 675px) {
-  body {
-    background: rgb(167, 150, 0);
-  }
   .digital {
     margin: 10px 0px;
   }
@@ -372,7 +372,9 @@ h2 {
     padding: 0px 18px 0px 18px;
     font-size: 15.5px;
   }
-
+  .siteName {
+    display: block;
+  }
   /*date and time on screen*/
 
   .dayAndDate {

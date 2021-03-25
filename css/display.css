@@ -1,0 +1,11 @@
+@media (max-width: 1024px) {
+  .analog {
+    display: none;
+  }
+  .digital {
+    display: flex;
+  }
+  .siteName {
+    display: none;
+  }
+}
