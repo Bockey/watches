@@ -13,12 +13,7 @@ body {
   color: white;
   font-size: 12px;
   font-family: "Rajdhani";
-  background: linear-gradient(
-    to right,
-    rgb(173, 115, 7) 60%,
-    gold,
-    rgb(173, 115, 7)
-  );
+  background: rgb(102, 63, 3);
 }
 
 .digital {

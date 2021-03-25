@@ -8,4 +8,7 @@
   .siteName {
     display: none;
   }
+  .moveBtn {
+    display: none;
+  }
 }

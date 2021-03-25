@@ -3,6 +3,7 @@ const goToDigital = document.querySelector(".goToDigital");
 const analog = document.querySelector(".analog");
 const digital = document.querySelector(".digital");
 const siteName = document.querySelector(".siteName");
+const moveBtn = document.querySelector(".moveBtn");
 
 goToAnalog.addEventListener("click", function () {
   digital.style.display = "none";
